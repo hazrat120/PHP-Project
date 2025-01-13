@@ -35,7 +35,7 @@ if(!isset($_REQUEST['id'])) {
 			$statement->execute(array($ecat_ids[$i]));
 			$result = $statement->fetchAll(PDO::FETCH_ASSOC);							
 			foreach ($result as $row) {
-				$p_ids[] = $row['p_id'];
+				$p_ids[] = $row['id'];
 			}
 		}
 
